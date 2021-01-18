@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def home(request):
-	return HttpResponse("Vista Inicio")
+	return render(request, "core/home.html")
 
 def about(request):
-	return HttpResponse("Vista Historia")
+	return render(request, "core/about.html")
+
+def store(request):
+	return render(request, "core/store.html")
