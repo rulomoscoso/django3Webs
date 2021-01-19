@@ -17,7 +17,7 @@ class SignUpView(CreateView):
 		form = super(SignUpView, self).get_form()
 		#Modificar en tiempo real
 		form.fields['username'].widget = forms.TextInput(attrs={'class':'form-control mb-5', 'placeholder':'Nombre de Usuario'})
-		form.fields['email'].widget = forms.EmailInput(attrs={'class':'form-control mb-5', 'placeholder':'Eamail'})
+		form.fields['email'].widget = forms.EmailInput(attrs={'class':'form-control mb-5', 'placeholder':'Email'})
 		form.fields['password1'].widget = forms.PasswordInput(attrs={'class':'form-control mb-5', 'placeholder':'contraseña'})
 		form.fields['password2'].widget = forms.PasswordInput(attrs={'class':'form-control mb-5', 'placeholder':'Repite la contrasena'})
 		return form	
